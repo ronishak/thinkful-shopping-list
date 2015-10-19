@@ -11,5 +11,9 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "chai-http": "^1.0.0"
   }
 }

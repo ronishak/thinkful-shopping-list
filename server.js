@@ -73,7 +73,7 @@ app.delete('/items/:id', function(req, res) {
   var id = req.params.id;
   var item = storage.delete(id);
   if (!item) {
-    return res.status(404);
+    res.status(404);
   } else {
     res.status(200).json(item);
   }
@@ -83,3 +83,6 @@ var port = process.env.PORT || 8080;
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
+
+exports.app = app;
+exports.storage = storage;
